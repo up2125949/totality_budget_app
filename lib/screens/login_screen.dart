@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'add_expense_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -64,14 +63,7 @@ class LoginScreen extends StatelessWidget {
 
                 // Continue without login
                 ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const AddExpenseScreen(),
-                      ),
-                    );
-                  },
+                  onPressed: () {},
                   child: const Text('Continue without login'),
                 ),
               ],
