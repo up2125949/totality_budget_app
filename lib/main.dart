@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+//import 'screens/login_screen.dart';
 
 void main() {
   runApp(const TotalityApp());
@@ -17,7 +17,7 @@ class TotalityApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         useMaterial3: true,
       ),
-      home: const LoginScreen(), // Start from the login screen
+      //home: const LoginScreen(), // Start from the login screen
     );
   }
 }
