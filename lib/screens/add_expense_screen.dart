@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'summary_screen.dart';
 
 class AddExpenseScreen extends StatefulWidget {
   const AddExpenseScreen({super.key});
@@ -72,21 +71,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
     }
   }
 
-  void _navigateToSummary() {
-    final budget = double.tryParse(_budgetController.text) ?? 0;
-    final expenses = _controllers.map((key, controller) =>
-        MapEntry(key, double.tryParse(controller.text) ?? 0));
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => SummaryScreen(
-          period: _selectedPeriod,
-          budget: budget,
-          expenses: expenses,
-        ),
-      ),
-    );
-  }
+  void _navigateToSummary() {}
 
   @override
   Widget build(BuildContext context) {
